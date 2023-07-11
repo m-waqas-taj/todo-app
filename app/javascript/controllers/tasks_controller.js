@@ -13,8 +13,8 @@ export default class extends Controller {
 			},
 			body: JSON.stringify({ completed: e.target.checked })
 		})
-			.then(data => {
-				alert(e.target.checked ? 'task completed' : 'task not completed')
-			})
+			.then(
+				alert(e.target.checked ? 'Task marked as Completed!' : 'Task marked as Not Completed!')
+			)
 	}
 }
